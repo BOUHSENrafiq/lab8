@@ -1,11 +1,11 @@
 <h2>Products</h2>
 
-<!--    display a list of product names.
+<!--    display a list of product names from products.ts.
         To iterate over the predefined list of products, put the *ngFor directive on a <div>
         With *ngFor, the <div> repeats for each product in the list.
         Directives with an asterisk are structural directives.
 -->
-<div *ngFor="let product of products">
+<div *ngFor="let product of products; index as productId">
 
     <!--    To display the names of the products, use the interpolation syntax {{ }}.
             Interpolation renders a property's value as text.
@@ -15,8 +15,9 @@
     <h3>
         <!-- Make each product name a link to product details
              Add the <a> element and set its title to be the product's name by using the property binding [ ]
+             The RouterLink directive gives the router control over the anchor element
         -->
-        <a [title]="product.name + ' :for details press link'">
+        <a [title]="product.name + ' :for details press link'" [routerLink]="['/products', productId]">
             {{ product.name }}
         </a>
     </h3>

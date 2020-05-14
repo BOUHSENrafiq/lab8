@@ -12,10 +12,10 @@ export class ProductAlertsComponent implements OnInit {
   *The @Input() decorator indicates that the property value passes in from the component's parent, the product list component.
    */
   @Input() product;
+  /* All objects that emit events are instances of the EventEmitter class */
   @Output() notify = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

@@ -7,8 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "deploy": "gh-pages -d dist"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -52,7 +51,7 @@
     "url": "git+https://github.com/BOUHSENrafiq/lab8.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "bouhsen_rafiq",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/BOUHSENrafiq/lab8/issues"
