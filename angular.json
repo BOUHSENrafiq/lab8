@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "lab8"
+    }
+  },
+  "defaultProject": "lab8",
+  "cli": {
+    "analytics": "09674c65-5031-4533-a962-bb4bef8ab276"
+  }
 }
